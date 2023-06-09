@@ -11,14 +11,16 @@
 First I installed the dependencies of the backend server with bundle install.
 Then i created the folders which were not there. 
 I used bundle add to add gem pry which was not there and was quintessential for my project to run.
-I first started by creating migrations with bundle exec db:create_migration NAME=....
-Created the tables then i migrated with bundle exec db:migrate
+I first started by creating migrations with ******bundle exec db:create_migration NAME=....**
+Created the tables then i migrated with ******bundle exec db:migrate**
 this brought about the file development.sqlite3 and schema.rb
+seeded the data i had inputed with **bundle exec rake db:seed**
 Then i created the models which has the classes here i created the three classes.
-Property.rb which belongs to both the seller and  the estate.
-Estate.rb which has_many properties and has many sellers through properties.
-Seller.rb which has many properties and has many estates through properties.
+**Property.rb** which belongs to both the seller and  the estate.
+**Estate.rb** which has_many properties and has many sellers through properties.
+**Seller.rb** which has many properties and has many estates through properties.
 At this point i was utilizing Active record to access and persist data in a database.
+This had created a two one to many relationship.
 This was crucial for building a Sinatra API backend.
 The application controller this is where i connected with the sinatra so i could get the local host.
 After launching i started working towards the frontend.
@@ -27,54 +29,10 @@ rackup config.ru.
 
 
 
-by a separate **React frontend** that interacts with the database via the API.
 
-## Requirements
 
-For this project, you must:
 
-- Use Active Record to interact with a database.
-- Have at least two models with a one-to-many relationship.
-- At a minimum, set up the following API routes in Sinatra:
-  - create and read actions for both models
-  - full CRUD capability for one of the models: 
-  The update action should be implemented using a form that is 
-  pre-filled with existing values for the object. On submission of 
-  the form, the object should update. Note: Using a like button or 
-  similar will not meet the update requirement.
-- Build a separate React frontend application that interacts with the API to
-  perform CRUD actions.
-- Implement proper front end state management. You should be updating state using a
-  setState function after receiving your response from a POST, PATCH, or DELETE 
-  request. You should NOT be relying on a GET request to update state. 
-- Use good OO design patterns. You should have separate classes for each of your
-  models, and create instance and class methods as necessary. 
-- Routes in your application (both client side and back end) should follow RESTful
-  conventions.
-- Use your back end optimally. Pass JSON for related associations to the front 
-  end from the back end. You should use active record methods in your controller to grab
-  the needed data from your database and provide as JSON to the front end. You
-  should NOT be relying on filtering front end state or a separate fetch request to
-  retrieve related data.
-
-For example, build a todo list application with a React frontend interface and a
-Sinatra backend API, where a user can:
-
-- **Create** a new todo
-- **Read** a list of all todos
-- **Update** an individual todo
-- **Delete** a todo
-
-A `Todo` can be tagged with a `Category`, so that each todo _belongs to_ a
-category and each category _has many_ todos.
-
-## Getting Started
-
-### Backend Setup
-
-This repository has all the starter code needed to get a Sinatra backend up and
-running. [**Fork and clone**][fork link] this repository to get started. Then, run
-`bundle install` to install the gems.
+  
 
 **Important**: Be sure you fork a copy of the repo into your GitHub account
 before cloning it. You can do this by using the link above or by clicking the
