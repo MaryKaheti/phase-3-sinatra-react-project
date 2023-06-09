@@ -27,6 +27,8 @@ After launching i started working towards the frontend.
 Since i keep gettting errors when running bundle exec rake server i used
 rackup config.ru.
 
+## Frontend
+
 
 
 
