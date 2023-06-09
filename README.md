@@ -39,7 +39,11 @@ view changes in the server
 
 ## Challenges
 I created a repository for front end so i had to transfer my code to this file.
+Time I started this project on wednesday a bad part on my side it is friday i have not slept peacefully
+for nearly 4 days. I have been dreaming about code this is not healthy.
 
+## Achievements
+I actually built this whole thing i feel confident ish right now with my coding.
 
 
 
