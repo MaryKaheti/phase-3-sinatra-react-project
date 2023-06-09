@@ -28,6 +28,17 @@ Since i keep gettting errors when running bundle exec rake server i used
 rackup config.ru.
 
 ## Frontend
+npm install
+npx create-react-app real-estate-app
+cd real-estate-app
+npm start to start the server.
+Code .
+Create folder for components. Create the files.
+Code and import the file to app.js
+view changes in the server
+
+## Challenges
+I created a repository for front end so i had to transfer my code to this file.
 
 
 
